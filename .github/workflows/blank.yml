@@ -12,7 +12,20 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  
+  - name: Get ChatGPT completion
+    id: chatgpt
+         uses: cahaseler/openai-chatgpt-action@v1
+        with:
+    apiKey: ${{ secrets.OPENAI_API_KEY }}
+    prompt: 'Please generate github best practices formatted pull request content in markdown based on the following commit messages and diffs'
+    input: 'put whatever you want in here'
+    model: 'gpt-4'
+    temperature: 1
+    max_tokens: 200
+              
 
+            
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -34,3 +47,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+             - name: chatgpt-action
+                   uses: unsafecoerce/chatgpt-action@release/v2

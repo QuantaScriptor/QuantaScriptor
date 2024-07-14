@@ -22,7 +22,7 @@ My real name is Reece Dixon. I'm a quantum developer for QuantaScript, and we're
 
 ## 📫 How to reach me ...
 - Email: [reece.dixon@quantascript.com](mailto:reece.dixon@quantascript.com)
-- Personal: [reece.c.dixon@live.com](mailto:reece.c.dixon@live.com)
+
 
 ## 😄 Pronouns: ...
 - He/Him
